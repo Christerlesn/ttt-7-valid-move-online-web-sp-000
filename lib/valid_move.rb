@@ -1,7 +1,7 @@
 # check if the position is on the board
 #check if the position is not taken
 def valid_move?(board, index)
-if index.to_i.between?(0, 8)
+if index.to_i.between?(0, 8) == position_taken?(board, index)
   false
 end
 end
