@@ -1,5 +1,7 @@
-def valid_move?(board, index)
-if position_taken?
+
+
+def valid_move?(board, index = gets.chomp.to_i)
+if index.between?(0, 8) == " " && position_taken?
   true
 end
 end
