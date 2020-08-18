@@ -2,7 +2,7 @@
 #check if the position is not taken
 def valid_move?(board, index)
 if index.to_i.between?(1, 8) && position_taken?(board, index) == " "
-  false
+  true
 end
 end
 
